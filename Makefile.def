@@ -1,0 +1,11 @@
+
+# Compile tool chain
+CROSS_COMPILE ?= arm-linux-gnueabihf-
+CC := ${CROSS_COMPILE}gcc
+AR := ${CROSS_COMPILE}ar
+
+# Compile options
+CFLAGS ?= -Wall
+
+# position of install
+PREFIX ?= /home/tavix/work/zynq-lib-release-v2018.3
